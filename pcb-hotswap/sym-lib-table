@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "keeb-parts")(type "KiCad")(uri "${KIPRJMOD}/../lib/keeb-parts/keeb-parts.kicad_sym")(options "")(descr ""))
+)

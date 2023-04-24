@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "keeb-parts")(type "KiCad")(uri "${KIPRJMOD}/../lib/keeb-parts/keeb-parts.pretty")(options "")(descr ""))
+  (lib (name "MX_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/../lib/MX_V2/MX_Hotswap.pretty")(options "")(descr ""))
+  (lib (name "lancer")(type "KiCad")(uri "${KIPRJMOD}/../lib/lancer/lancer.pretty")(options "")(descr ""))
+)

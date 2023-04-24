@@ -1,0 +1,17 @@
+(footprint "Minus" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 643FE0FA)
+  (attr smd)
+  (fp_text reference "REF**" (at 0 1.27 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 0381a2ff-9218-45b6-b312-2b3c489f5dba)
+  )
+  (fp_text value "Minus" (at 0 -1.27 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 2b906f29-cc49-4c94-8fc7-469f1770f86f)
+  )
+  (fp_text user "-" (at 0 0 unlocked) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 1e07a5cb-8b62-4df9-9e4f-99ee30ecf1f2)
+  )
+)
