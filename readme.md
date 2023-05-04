@@ -82,6 +82,10 @@ Under construction.
 
 Under construction.
 
+# Changelog
+
+- v1.0: initial release version (current version)
+
 # Coming soon
 
 - ZMK and KMK support
