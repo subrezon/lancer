@@ -4,8 +4,6 @@ This guide is very detailed and will describe the most efficient way of building
 
 Some photos are missing for now, I'll add them at a later point in time.
 
-#
-
 # Diodes
 
 Start by placing your PCB face-down on your working surface. Heat up your soldering iron.
