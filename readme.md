@@ -59,13 +59,11 @@ Only QMK is currently officially supported. I'm actively working to provide ZMK 
 
 The keyboard ID is subrezon/lancer in QMK. It is currently pending approval in the official QMK repository, you can use my repository for now. I will post an update as soon as it is approved by QMK devs.
 
-Here is an example of flashing the keyboard with the default firmware:
+Here is an example of flashing the keyboard with the default firmware using the QMK CLI:
 
-		make subrezon/lancer:default:flash
-
-Or, using the QMK CLI:
-
-		qmk flash -kb subrezon/lancer -km default
+```
+qmk flash -kb subrezon/lancer -km default
+```
 
 If you're unsure what to do with this information, check out the [QMK Documentation](https://docs.qmk.fm/#/) for information on how to get started with QMK.
 
