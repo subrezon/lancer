@@ -2,7 +2,9 @@
 
 The Lancer is a 36-key ortholinear keyboard with a light split and a focus on compact footprint and portability. It is a direct successor to [la_nc](https://github.com/subrezon/la_nc), and is very much inspired by other keyboards like Planck, Lumberjack and Lesovoz.
 
-TODO photo
+![](https://github.com/subrezon/lancer/raw/master/docs/lancer-1.png)
+![](https://github.com/subrezon/lancer/raw/master/docs/lancer-2.png)
+![](https://github.com/subrezon/lancer/raw/master/docs/lancer-3.png)
 
 # Features
 
