@@ -49,9 +49,15 @@ Optionally:
 | Screen socket | 1x | 5-pin |
 | Screen cover | 1x | dxf file |
 
+# PCB & plates fabrication
+
+Upload the [PCB gerber file](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-pcb-hotswap/lancer-hotswap-pcb.zip) to a PCB manufacturer site like JLCPCB or PCBWay. You can keep most settings at default.
+
+If you want FR4 plates, upload [top plate](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-top-plate/lancer-top-plate.zip) and [bottom plate](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-bottom-plate/lancer-bottom-plate.zip) gerbers in the same fashion. If you want plastic or metal plates, use [top plate](https://github.com/subrezon/lancer/raw/master/dxf/top-plate.dxf) and [bottom plate](https://github.com/subrezon/lancer/raw/master/dxf/bottom-plate.dxf) dxf files for cutting.
+
 # Build guide
 
-Here is a build guide in english. Feel free to submit better photos or translations!
+Here is a WIP build guide in english. Feel free to submit better photos or translations!
 
 # Firmware
 
