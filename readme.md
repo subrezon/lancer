@@ -82,7 +82,28 @@ If you're unsure what to do with this information, check out the [QMK Documentat
 
 ## ZMK
 
-Under construction.
+Warning: as of now, none of this has been tested by me yet, I'm still waiting for my nice!nanos to arrive. This warning will be removed after I have tested this.
+
+You can use [this ZMK user config repository](https://github.com/subrezon/zmk-config-lancer) to build ZMK firmware for Lancer. You can:
+
+- Download pre-built firmware from this repository. It is configured for nice!nano v2 and uses the default keymap.
+- If you wish to change the keymap and/or use an MCU board other than nice!nano v2, fork this repository and edit the files to suit your needs. The keymap is under `config/boards/shields/lancer/lancer.keymap`.
+- If you already have a ZMK user config repository, you may integrate the contents of this repository into your own. Copy the `config/boards/shields/lancer` directory into your repository, than edit your build.yaml to include Lancer:
+
+```
+---
+include:
+  - board: your_other_board
+    shield: your_other_shield
+  - board: nice_nano_v2
+    shield: lancer
+```
+
+If you are using an MCU board other than nice!nano v2, change the `nice_nano_v2` board identifier to whatever your board's identifier is. You can find supported boards and their respective identifiers [here](https://zmk.dev/docs/hardware#pro_micro).
+
+If you're new to ZMK, check out the [ZMK documentation](https://zmk.dev/docs) on how to get started.
+
+Note: I might get around to get Lancer officially supported in ZMK main repo, but I feel like Lancer would need to become at least moderately popular first to justify the work. A public user config repo will do for now.
 
 ## KMK
 
