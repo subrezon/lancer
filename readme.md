@@ -82,8 +82,6 @@ If you're unsure what to do with this information, check out the [QMK Documentat
 
 ## ZMK
 
-Warning: as of now, none of this has been tested by me yet, I'm still waiting for my nice!nanos to arrive. This warning will be removed after I have tested this.
-
 You can use [this ZMK user config repository](https://github.com/subrezon/zmk-config-lancer) to build ZMK firmware for Lancer. You can:
 
 - Download pre-built firmware from that repository. It is configured for nice!nano v2 and uses the default keymap.
