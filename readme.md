@@ -105,7 +105,26 @@ Note: I might get around to get Lancer officially supported in ZMK main repo, bu
 
 ## KMK
 
-Under construction.
+KMK board files are currently being reviewed for merging into the official KMK repository: https://github.com/KMKfw/kmk_firmware/pull/815. If the pull request hasn't been merged yet - get the files from my [KMK fork](https://github.com/subrezon/kmk_firmware), from the `subrezon/lancer` branch.
+
+To install KMK firmware on your lancer, follow these steps:
+
+- Download the latest release of [CircuitPython](https://circuitpython.org/downloads) for your MCU board.
+- Connect your MCU board to your computer and put it into flashing mode, usually by double-tapping RESET (non-RP2040), or holding BOOT and pressing RESET (RP2040)
+- A USB storage device will appear. Copy the `adafruit-circuitpython-*.uf2` you just downloaded onto it and wait. The board will reboot and appear again as a USB storage device named `CIRCUITPY`.
+- Download or clone the [KMK Firmware Repository](https://github.com/KMKfw/kmk_firmware). Copy the `kmk` folder and the `boot.py` file onto the MCU.
+  - If you use a nice!nano or another MCU board with only 1MB of flash, you will need to [compile the firmware](http://kmkfw.io/docs/Officially_Supported_Microcontrollers#pre-compiling-kmk-for-nicenano) first.
+- Delete the `code.py` file, and copy `main.py` and `kb.py` from the `boards/subrezon/lancer` folder.
+
+The `kb.py` file has been set up for nice!nano v2. If you have another MCU board - open the `kb.py` folder and look at line 5. It says:
+
+```
+from kmk.quickpin.pro_micro.nice_nano import pinout as pins
+```
+
+Change `nice_nano` to match your MCU board. [These ones are supported](https://github.com/KMKfw/kmk_firmware/tree/master/kmk/quickpin/pro_micro).
+
+If yours isn't in the list, you will have to edit the board's pinout yourself.
 
 # Changelog
 
