@@ -126,13 +126,19 @@ Change `nice_nano` to match your MCU board. [These ones are supported](https://g
 
 If yours isn't in the list, you will have to edit the board's pinout yourself.
 
+# Known issues
+
+- The screen socket is a little too close to the Pro Micro, so there is very little space to install a battery underneath the Pro Micro. It is still possible, but requires a little too much fuss to get it right. This will be fixed in v1.1 by moving the socket 1.27 mm to the south.
+- Most people install their thumb keycaps upside down, so the thumb row sockets would have to be reversed to maintain south-facingness. This will be fixed in v1.1, the electrical layout will remain unchanged.
+- The two southmost screws were placed below the middle of switches 4 and 7 of the third row. Unless you're using screws with very small screw heads, they need to be unscrewed before pulling out those two switches. Fixing this would be a plate layout change, so this will likely never be fixed to maintain compatibility between plate/PCB revisions.
+
 # Changelog
 
 - v1.0: initial release version (current version)
 
 # Coming soon
 
-- ZMK and KMK support
+- Acrylic screen cover
 - Soldered PCB option
 - 3D-printable case options
 
