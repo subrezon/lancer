@@ -61,7 +61,13 @@ Here is a WIP build guide in english. Feel free to submit better photos or trans
 
 # Firmware
 
-Only QMK is currently officially supported. I'm actively working to provide ZMK and KMK support.
+Lancer has official support for all 3 major firmwares: QMK, ZMK and KMK.
+
+QMK support is currently only on [my QMK fork](https://github.com/subrezon/qmk_firmware/tree/subrezon/lancer), the `subrezon/lancer` branch. [The pull request has been submitted to the official QMK repository and is awaiting approval](https://github.com/qmk/qmk_firmware/pull/20792). It's taking an unusually long amount of time, but QMK devs are few and the pull request queue is hundreds long.
+
+ZMK is user config repository only. Merging into official ZMK repository is currently not planned.
+
+KMK board files can be found on [my KMK fork](https://github.com/subrezon/kmk_firmware/tree/subrezon/lancer/boards/subrezon/lancer). [The pull request has been submitted to the official KMK repository and is awaiting approval](https://github.com/KMKfw/kmk_firmware/pull/815).
 
 ## QMK
 
@@ -107,7 +113,7 @@ Note: I might get around to get Lancer officially supported in ZMK main repo, bu
 
 KMK board files are currently being reviewed for merging into the official KMK repository: https://github.com/KMKfw/kmk_firmware/pull/815. If the pull request hasn't been merged yet - get the files from my [KMK fork](https://github.com/subrezon/kmk_firmware), from the `subrezon/lancer` branch.
 
-To install KMK firmware on your lancer, follow these steps:
+To install KMK firmware on your Lancer, follow these steps:
 
 - Download the latest release of [CircuitPython](https://circuitpython.org/downloads) for your MCU board.
 - Connect your MCU board to your computer and put it into flashing mode, usually by double-tapping RESET (non-RP2040), or holding BOOT and pressing RESET (RP2040)
