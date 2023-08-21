@@ -1,0 +1,16 @@
+(footprint "Off" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr smd)
+  (fp_text reference "REF**" (at 0 2.54 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.1)))
+    (tstamp c12e4899-ba4c-42de-b478-b5edf56856ad)
+  )
+  (fp_text value "Off" (at 0 -2.54 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 35c4afd8-ff95-46e1-8e54-eb88b6771d04)
+  )
+  (fp_text user "OFF" (at 0 0 unlocked) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 936cd564-59c7-47bb-b4a1-5032c7601533)
+  )
+)
