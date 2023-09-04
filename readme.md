@@ -20,12 +20,12 @@ The Lancer is a 36-key ortholinear keyboard with a light split and a focus on co
 
 | Item | Count | Notes |
 | :- | :- | :- |
-| PCB | 1x | Gerber file |
-| Top plate | 1x | Gerber for FR4, dxf for other materials|
-| Bottom plate | 1x | Gerber for FR4, dxf for other materials |
+| PCB | 1x | [Gerber file](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-pcb-hotswap/lancer-hotswap-pcb.zip) |
+| Top plate | 1x | [Gerber for FR4](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-top-plate/lancer-top-plate.zip), [dxf for other materials](https://github.com/subrezon/lancer/raw/master/dxf/top-plate.dxf) |
+| Bottom plate | 1x | [Gerber for FR4](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-bottom-plate/lancer-bottom-plate.zip), [dxf for other materials](https://github.com/subrezon/lancer/raw/master/dxf/bottom-plate.dxf) |
 | Pro Micro | 1x | other boards with compatible pinout also work |
 | SMD Diodes | 36x | 1N4148W SOD123 |
-| Hotswap sockets | 36x | Kailh or Gateron |
+| MX Hotswap sockets | 36x | Kailh or Gateron |
 | Tactile button | 1x | 3x6mm 2-pin button |
 | M2 screws | 16x | M2x4 or M2x5, head diameter <5mm |
 | M2 standoffs | 8x | 7mm for lowest profile, 8mm for equal plate spacing |
@@ -61,17 +61,15 @@ Here is a WIP build guide in english. Feel free to submit better photos or trans
 
 # Firmware
 
-Lancer has official support for all 3 major firmwares: QMK, ZMK and KMK.
+Lancer supports all 3 major firmwares: QMK, ZMK and KMK.
 
 QMK support is currently only on [my QMK fork](https://github.com/subrezon/qmk_firmware/tree/subrezon/lancer), the `subrezon/lancer` branch. [The pull request has been submitted to the official QMK repository and is awaiting approval](https://github.com/qmk/qmk_firmware/pull/20792). It's taking an unusually long amount of time, but QMK devs are few and the pull request queue is hundreds long.
 
 ZMK is user config repository only. Merging into official ZMK repository is currently not planned.
 
-KMK board files can be found on [my KMK fork](https://github.com/subrezon/kmk_firmware/tree/subrezon/lancer/boards/subrezon/lancer). [The pull request has been submitted to the official KMK repository and is awaiting approval](https://github.com/KMKfw/kmk_firmware/pull/815).
-
 ## QMK
 
-The keyboard ID is subrezon/lancer in QMK. It is currently pending approval in the official QMK repository, you can use my repository for now. I will post an update as soon as it is approved by QMK devs.
+The keyboard ID is `subrezon/lancer` in QMK. It is currently pending approval in the official QMK repository, you can use my repository for now. I will post an update as soon as it is approved by QMK devs.
 
 Here is an example of flashing the keyboard with the default firmware using the QMK CLI:
 
@@ -111,12 +109,10 @@ Note: I might get around to get Lancer officially supported in ZMK main repo, bu
 
 ## KMK
 
-KMK board files are currently being reviewed for merging into the official KMK repository: https://github.com/KMKfw/kmk_firmware/pull/815. If the pull request hasn't been merged yet - get the files from my [KMK fork](https://github.com/subrezon/kmk_firmware), from the `subrezon/lancer` branch.
-
 To install KMK firmware on your Lancer, follow these steps:
 
 - Download the latest release of [CircuitPython](https://circuitpython.org/downloads) for your MCU board.
-- Connect your MCU board to your computer and put it into flashing mode, usually by double-tapping RESET (non-RP2040), or holding BOOT and pressing RESET (RP2040)
+- Connect your MCU board to the computer and put it into flashing mode, usually by double-tapping RESET (non-RP2040), or holding BOOT and pressing RESET (RP2040)
 - A USB storage device will appear. Copy the `adafruit-circuitpython-*.uf2` you just downloaded onto it and wait. The board will reboot and appear again as a USB storage device named `CIRCUITPY`.
 - Download or clone the [KMK Firmware Repository](https://github.com/KMKfw/kmk_firmware). Copy the `kmk` folder and the `boot.py` file onto the MCU.
   - If you use a nice!nano or another MCU board with only 1MB of flash, you will need to [compile the firmware](http://kmkfw.io/docs/Officially_Supported_Microcontrollers#pre-compiling-kmk-for-nicenano) first.
