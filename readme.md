@@ -63,13 +63,13 @@ Here is a WIP build guide in english. Feel free to submit better photos or trans
 
 Lancer supports all 3 major firmwares: QMK, ZMK and KMK.
 
-QMK support is currently only on [my QMK fork](https://github.com/subrezon/qmk_firmware/tree/subrezon/lancer), the `subrezon/lancer` branch. [The pull request has been submitted to the official QMK repository and is awaiting approval](https://github.com/qmk/qmk_firmware/pull/20792). It's taking an unusually long amount of time, but QMK devs are few and the pull request queue is hundreds long.
+Lancer support in QMK and KMK has been merged into their respective official repositories.
 
 ZMK is user config repository only. Merging into official ZMK repository is currently not planned.
 
 ## QMK
 
-The keyboard ID is `subrezon/lancer` in QMK. It is currently pending approval in the official QMK repository, you can use my repository for now. I will post an update as soon as it is approved by QMK devs.
+The keyboard ID is `subrezon/lancer` in QMK.
 
 Here is an example of flashing the keyboard with the default firmware using the QMK CLI:
 
