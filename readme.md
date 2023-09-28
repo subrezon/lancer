@@ -57,7 +57,7 @@ If you want FR4 plates, upload [top plate](https://github.com/subrezon/lancer/ra
 
 # Build guide
 
-Here is a WIP build guide in english. Feel free to submit better photos or translations!
+[Here is a WIP build guide in english](https://github.com/subrezon/lancer/blob/master/docs/build-guide.md). Feel free to submit better photos or translations!
 
 # Firmware
 
