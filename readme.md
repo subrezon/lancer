@@ -28,7 +28,7 @@ The Lancer is a 36-key ortholinear keyboard with a light split and a focus on co
 | MX Hotswap sockets | 36x | Kailh or Gateron |
 | Tactile button | 1x | 3x6mm 2-pin button |
 | M2 screws | 16x | M2x4 or M2x5, head diameter <5mm |
-| M2 standoffs | 8x | 7mm for lowest profile, 8mm for equal plate spacing |
+| M2 standoffs | 8x | 8mm recommended[^1] |
 | MX-style switches| 36x | 3-pin or 5-pin |
 | 1U MX keycaps | 36x |  |
 
@@ -37,7 +37,7 @@ For wireless operation:
 | Item | Count | Notes |
 | :- | :- | :- |
 | Wireless Pro Micro | 1x | nice!nano, nrfmicro, etc. |
-| Rechargeable battery | 1x | usually 3.7V two-wire battery like 350926 |
+| Rechargeable battery | 1x | 3.7V two-wire battery (eg. 350926) |
 | 7-pin SPDT switch | 1x | MSK-12C02 or compatible |
 
 Optionally:
@@ -47,11 +47,32 @@ Optionally:
 | Pro Micro socket | 1-2x | either 1x 24-pin wide or 2x 12-pin single-row |
 | Screen | 1x | either nice!view or SSD1306 128x32 OLED |
 | Screen socket | 1x | 5-pin |
-| Screen cover | 1x | dxf file |
+| Screen cover | 1x | dxf file (coming soon) |
+
+[^1]: 8mm is recommended and will result in equal spacing between top plate, PCB and bottom plate. 7mm can be used for the lowest possible profile, however it is only compatible with Kailh sockets - Gateron sockets slightly thicker.
+
+# Tools
+
+Required:
+
+- Soldering iron/station (+ solder, flux, etc.)
+- Screwdriver for the screws
+- Side cutters (regular wire cutters will do in a pinch)
+
+Optional (but very recommended):
+
+- Tweezers (preferably reverse ones, for placing diodes & sockets)
+- Breadboard (for aligning ProMicro pins)
+- Tape (for holding components in place)
+
+Safety measures:
+
+- Fan (for blowing solder fumes away from your face)
+- Eye protection (for trimming pins)
 
 # PCB & plates fabrication
 
-Upload the [PCB gerber file](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-pcb-hotswap/lancer-hotswap-pcb.zip) to a PCB manufacturer site like JLCPCB or PCBWay. You can keep most settings at default.
+Upload the [PCB gerber file](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-pcb-hotswap/lancer-hotswap-pcb.zip) to a PCB manufacturer site like JLCPCB or PCBWay. You can keep settings at default and just pick the color.
 
 If you want FR4 plates, upload [top plate](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-top-plate/lancer-top-plate.zip) and [bottom plate](https://github.com/subrezon/lancer/raw/master/gerbers/lancer-bottom-plate/lancer-bottom-plate.zip) gerbers in the same fashion. If you want plastic or metal plates, use [top plate](https://github.com/subrezon/lancer/raw/master/dxf/top-plate.dxf) and [bottom plate](https://github.com/subrezon/lancer/raw/master/dxf/bottom-plate.dxf) dxf files for cutting.
 
